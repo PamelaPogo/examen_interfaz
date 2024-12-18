@@ -5,7 +5,7 @@
   background: linear-gradient(to right, #1E293B, #d8d8ff); /* Fondo con gradiente */
   border: 2px solid #a6a8e3; /* Borde */
   border-radius: 12px; /* Bordes redondeados */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0 8px 16px #8c90d5; /* Sombra */
   margin: 2rem auto; /* Centrado y separación */
   max-width: 1300px; /* Ancho máximo */
 }
@@ -25,7 +25,7 @@
 .p-card {
   background-color: var(--card-background);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #8c90d5;
   margin-bottom: 2rem;
 }
 
@@ -52,7 +52,7 @@
   padding: 1rem;
   background-color: var(--card-background);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #8c90d5;
 }
 
 .auto-description h2 {
@@ -70,7 +70,7 @@
 .p-button {
   font-family: var(--font-family);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #8c90d5;
 }
 
 .p-button-outlined {
