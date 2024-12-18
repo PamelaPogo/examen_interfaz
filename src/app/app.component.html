@@ -1,0 +1,55 @@
+<div class="card shadow-4 border-round-lg">
+    <p-toolbar class="shadow-2" [style]="{
+            'border-radius': '1rem',
+            'background-image': 'linear-gradient(to right, #1E293B, #0F172A)',
+            'padding': '0.5rem 1rem'
+        }">
+<!-- Logo or Title -->
+<ng-template pTemplate="start">
+    <div class="flex align-items-center gap-2">
+        <!-- Logo redondo -->
+        <img 
+            src="https://i.pinimg.com/236x/b6/c0/7d/b6c07d92f2ba83741a1e8f32f8d610c7.jpg" 
+            alt="Logo" 
+            class="h-4rem w-4rem border-circle shadow-2"
+        >
+        <!-- Texto estilizado -->
+        <span 
+            class="text-white text-4xl font-extrabold tracking-wide glow-text">
+            VIMODRI
+        </span>
+    </div>
+</ng-template>
+
+
+        <!-- Navigation Buttons -->
+        <ng-template pTemplate="center">
+            <div class="flex gap-4">
+                
+                <button pButton class="p-button-text text-white hover:opacity-90 transition-all transition-duration-200"
+                    [routerLink]="['/about']">
+                    <i class="pi pi-info-circle mr-2"></i> Acerca de
+                </button>
+                <button pButton class="p-button-text text-white hover:opacity-90 transition-all transition-duration-200"
+                    [routerLink]="['/contact']">
+                    <i class="pi pi-envelope mr-2"></i> Contacto
+                </button>
+            </div>
+        </ng-template>
+
+        <!-- User Profile (Right Side) -->
+        <ng-template pTemplate="end">
+            <div class="flex align-items-center gap-3">
+                <!-- Botón de Registro -->
+                <button pButton type="button" label="Compra ahora"
+                    class="bg-blue-500 text-white hover:bg-blue-700 border-round px-4 py-2 transition-all"
+                    (click)="onRegister()">
+                </button>
+            </div>
+
+        </ng-template>
+
+    </p-toolbar>
+</div>
+
+<router-outlet></router-outlet>

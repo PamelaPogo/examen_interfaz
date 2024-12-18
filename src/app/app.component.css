@@ -1,0 +1,16 @@
+.glow-text {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                     0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    to {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 
+                     0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}

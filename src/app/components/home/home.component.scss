@@ -1,0 +1,240 @@
+
+/* Carrusel */
+.custom-carousel-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #1E293B, #d8d8ff); /* Fondo con gradiente */
+  border: 2px solid #a6a8e3; /* Borde */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  margin: 2rem auto; /* Centrado y separación */
+  max-width: 1300px; /* Ancho máximo */
+}
+
+.custom-carousel {
+  padding: 1rem;
+}
+
+.carousel-image {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Ajusta la imagen para que ocupe el espacio sin deformarse */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+/* Cards */
+.p-card {
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.p-card-header {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--font-family);
+  font-size: var(--font-size-heading);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Texto de la Descripción del Auto */
+.auto-description {
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auto-description h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.auto-description p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Botones */
+.p-button {
+  font-family: var(--font-family);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-button-outlined {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.p-button-outlined:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.p-button {
+  background-color: var(--button-color);
+  border: none;
+}
+
+.p-button:hover {
+  background-color: var(--button-hover-color);
+  border: none;
+}
+
+.auto-image {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  object-fit: cover; /* Ajusta la imagen para que cubra el espacio sin deformarse */
+  border-radius: 8px; /* Bordes redondeados, si lo deseas */
+}
+
+/* Estilos para el Footer */
+.footer-container {
+  background-color: #a6a8e3; /* Fondo oscuro para el contenedor */
+  padding: 20px 0; /* Espaciado superior e inferior */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+.footer {
+  color: #ffffff; /* Texto blanco */
+  font-family: 'Arial', sans-serif; /* Tipografía profesional */
+  font-size: 14px; /* Tamaño de fuente moderado */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+.footer .grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .col-12 {
+  width: 100%;
+}
+
+.footer .col-12.md\:col-6 {
+  width: 48%; /* Espaciado entre las columnas */
+}
+
+.footer .text-right {
+  text-align: right;
+}
+
+.footer a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #ffffff; /* Color blanco para los enlaces */
+  margin: 0 8px; /* Espaciado entre los enlaces */
+  font-weight: 500; /* Peso de la fuente moderado para los enlaces */
+}
+
+.footer a:hover {
+  color: #f7a700; /* Color dorado para resaltar en hover */
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Opcional: Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer .grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .col-12.md\:col-6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .text-right {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card-img {
+  width: 100%; /* La imagen ocupa el 100% del contenedor */
+  height: 250px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+  border-radius: 2px; /* Bordes redondeados en las imágenes */
+}
+
+
+.gallery-image {
+  width: 800px; /* Establecer un tamaño fijo para las imágenes */
+  height: 240px; /* Puedes ajustar el alto según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+}
+
+.thumbnail-image {
+  width: 80px; /* Ajusta el tamaño de las miniaturas */
+  height: 80px;
+  object-fit: cover; /* Mantiene el mismo comportamiento de ajuste para miniaturas */
+}
+.custom-gallery {
+  max-width: 900px; /* Controla el tamaño máximo del contenedor */
+  margin: 0 auto; /* Centra la galería en la pantalla */
+}
+
+.auto-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease; /* Transición más suave */
+}
+
+.auto-image:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más difusa */
+}
+
+
+.auto-sold-bar {
+  background-color: #a6a8e3; /* Color oscuro elegante relacionado con autos de lujo */
+  color: #fff;
+  padding: 20px 50px; /* Espaciado superior/inferior y lateral */
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.auto-sold-bar:hover {
+  background-color: #8c90d5; /* Cambio de color en hover */
+}
+
+.auto-sold-bar-content {
+  max-width: 1200px;
+  text-align: center;
+  width: 100%;
+}
+
+.auto-sold-bar-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+

@@ -1,0 +1,248 @@
+<!-- Carrusel -->
+<div class="card shadow-4 border-round-lg custom-carousel-container">
+  <p-carousel 
+      [value]="images" 
+      [numVisible]="3" 
+      [numScroll]="2" 
+      [circular]="true" 
+      [autoplayInterval]="3000" 
+      class="custom-carousel">
+      
+    <ng-template pTemplate="header">
+        <h2 class="text-center text-primary font-bold">
+          <i class="pi pi-images mr-2"></i>Galería de Ropa
+        </h2>
+    </ng-template>
+    
+    <ng-template let-image pTemplate="item">
+        <div class="text-center">
+            <img 
+                [src]="image.src" 
+                [alt]="image.alt" 
+                class="carousel-image border-round-lg shadow-2">
+            <h4 class="text-primary mt-2">
+              <i class="pi pi-car mr-2"></i>{{ image.title }}
+            </h4>
+        </div>
+    </ng-template>
+    
+    <ng-template pTemplate="footer">
+        <p class="text-center text-bluegray-600 mt-3">
+          <i class="pi pi-tag mr-2"></i>Ropa de calidad, tu mejor opción de compra
+        </p>
+    </ng-template>
+  </p-carousel>
+</div>
+<!-- Barra del Auto Más Vendido -->
+<div class="auto-sold-bar">
+  <div class="auto-sold-bar-content">
+    <h2>El <span class="highlight-text">Bienvenidos a</span> nuestra tienda Vimodri</h2>
+    <p class="auto-description">Bienvenidos a nuestra tienda online, el destino perfecto para los amantes de la moda. Aquí encontrarás una amplia selección de ropa de temporada diseñada para todos los estilos y ocasiones. Desde looks casuales hasta piezas elegantes, ofrecemos prendas de alta calidad que combinan comodidad y estilo. Navega fácilmente por nuestras categorías y descubre las últimas tendencias en moda para mujer, hombre y niños. Con envíos rápidos, ofertas exclusivas y un proceso de compra seguro, vestir a la moda nunca fue tan sencillo. ¡Renueva tu guardarropa con un solo clic!</p>
+  </div>
+</div>
+
+<!-- Descripción del Auto y su Imagen -->
+<div class="grid mt-4">
+  <!-- Columna de Descripción -->
+  <div class="col-12 md:col-6">
+    <p-card header="Ropa mas vendida del Mes" class="auto-description-card shadow-2">
+      <p class="auto-description-text">
+        <i class="pi pi-info-circle mr-2 text-primary"></i>
+        Descubre nuestra exclusiva colección de ropa del año, diseñada para marcar tendencia y mantenerte a la vanguardia de la moda. Inspirada en los estilos más populares de esta temporada, nuestra línea ofrece una combinación perfecta de elegancia, modernidad y comodidad. Desde colores vibrantes hasta cortes innovadores, nuestras prendas están confeccionadas con materiales de alta calidad para garantizar un ajuste impecable y duradero. Renueva tu guardarropa con piezas que capturan el espíritu del año y te permiten expresarte con confianza y estilo. ¡Viste lo mejor de esta temporada con nosotros!
+      </p>
+    </p-card>
+  </div>
+  
+  <!-- Columna de Imagen del Auto -->
+  <div class="col-12 md:col-6">
+    <p-card header="Ropa de Moda para cada gusto" class="auto-image-card shadow-2">
+      <img 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB6y-pw1bC03L2oywFdaAcnWDrDBbMvFerAuY4s4YKWmePNGTsMDQcVhNLCx6ZyR0_T1XscfeNJLGpwpuMLSTNPjPVstANR0g_5viWQTTZvQPvlee2STmUTXa96YH33rdDbJNg0lqfMys/s580/4.jpg" 
+        alt="Ferrari 296 GTB"
+        class="auto-image"
+        [ngStyle]="{ 'transition': 'transform 0.5s', 'width': '100%', 'height': 'auto' }"
+        
+      />
+    </p-card>
+  </div>
+</div>
+
+
+
+<!-- Cards de Productos -->
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ropa Casual de Mujer" class="shadow-2">
+      <img src="https://www.backseries.com/wp-content/uploads/2022/10/ROPA-AESTHETIC-MUJER.jpg" alt="Producto 1" class="card-img">
+      <p>Descubre nuestra colección de ropa casual para mujer, diseñada para acompañarte en tu día a día con estilo y comodidad. Encuentra desde prendas básicas hasta las últimas tendencias en camisetas, blusas, jeans, vestidos y más.</p>
+      <p-footer>
+        <div class="p-d-flex p-jc-between">
+          <p-button label="Comprar" icon="pi pi-cart" class="p-button-outlined p-mr-2"></p-button>
+          <p-button label="Detalles" icon="pi pi-info-circle" class="p-button-outlined"></p-button>
+        </div>
+      </p-footer>
+    </p-card>
+  </div>
+  
+  <div class="col-12 md:col-4">
+    <p-card header="Conjuntos" class="shadow-2">
+      <img src="https://blob.lacaderadeeva.com/images/2021/09/20/286874.jpg" alt="Producto 2" class="card-img">
+      <p>Explora nuestra exclusiva colección de conjuntos para mujer, diseñados para combinar estilo y practicidad en cada detalle. Desde coordinados casuales perfectos para tu día a día, hasta conjuntos elegantes para ocasiones especiales, encontrarás opciones que destacan por su diseño moderno y su comodidad excepcional..</p>
+      <p-footer>
+        <div class="p-d-flex p-jc-between">
+          <p-button label="Comprar" icon="pi pi-cart" class="p-button-outlined p-mr-2"></p-button>
+          <p-button label="Detalles" icon="pi pi-info-circle" class="p-button-outlined"></p-button>
+        </div>
+      </p-footer>
+    </p-card>
+  </div>
+  
+
+  <div class="col-12 md:col-4">
+    <p-card header="Vestidos" class="shadow-2">
+      <img src="https://images-cdn.ubuy.ec/663f01583127f7051b1ee6ba-vestidos-ropa-de-moda-para-mujer-largos.jpg" alt="Producto 3" class="card-img">
+      <p>Explora nuestra exclusiva colección de vestidos diseñados para resaltar tu estilo y personalidad en cada ocasión. Desde vestidos casuales y cómodos para el día a día, hasta elegantes opciones perfectas para eventos especiales. Encuentra una variedad de diseños, colores y estilos, confeccionados con materiales de alta calidad.</p>
+      <p-footer>
+        <div class="p-d-flex p-jc-between">
+          <p-button label="Comprar" icon="pi pi-cart" class="p-button-outlined p-mr-2"></p-button>
+          <p-button label="Detalles" icon="pi pi-info-circle" class="p-button-outlined"></p-button>
+        </div>
+      </p-footer>
+    </p-card>
+  </div>
+</div>
+
+<div class="grid">
+  <!-- Galería de imágenes -->
+  <div class="col-12 md:col-6">
+    <p-galleria 
+      [value]="galleriaImages" 
+      [responsiveOptions]="responsiveOptions" 
+      [numVisible]="3" 
+      [circular]="true" 
+      [showItemNavigators]="true" 
+      [showThumbnails]="true" 
+      class="custom-gallery">
+      
+      <ng-template pTemplate="item" let-image>
+        <img 
+          [src]="image.itemImageSrc" 
+          [alt]="image.alt" 
+          class="gallery-image shadow-2 border-round-lg">
+      </ng-template>
+      
+      <ng-template pTemplate="thumbnail" let-image>
+        <img 
+          [src]="image.thumbnailImageSrc" 
+          [alt]="image.alt" 
+          class="thumbnail-image shadow-1">
+      </ng-template>
+    </p-galleria>
+  </div>
+
+  <!-- Apartado de texto -->
+  <div class="col-12 md:col-6">
+    <div class="card shadow-2 border-round-lg p-4">
+      <h2 class="text-primary font-bold">
+        Vestimenta para niña y jovenes
+      </h2>
+      <p class="text-bluegray-800">
+        Descubre nuestra encantadora colección de ropa para niña, creada para combinar estilo, comodidad y diversión. Ofrecemos una amplia variedad de prendas, desde vestidos tiernos y elegantes hasta conjuntos cómodos y coloridos ideales para el día a día. Diseñada con materiales suaves y duraderos, nuestra ropa garantiza libertad de movimiento y comodidad para las más pequeñas. Explora modelos llenos de detalles adorables, estampados vibrantes y diseños únicos que harán que cada momento sea especial.
+      </p>
+      <p class="text-bluegray-600">
+        Explora nuestra colección de ropa para jóvenes mujeres, diseñada para reflejar tu estilo único y acompañarte en cada momento de tu vida. Desde conjuntos casuales y cómodos para el día a día, hasta prendas modernas y sofisticadas para ocasiones especiales, aquí encontrarás todo lo que necesitas para lucir increíble.
+      </p>
+      <p-button 
+        label="Más Información" 
+        icon="pi pi-search" 
+        class="p-button-rounded p-button-outlined mt-4">
+      </p-button>
+    </div>
+  </div>
+</div>
+
+<!-- Formulario -->
+<div 
+  class="card shadow-4 border-round-lg p-4 mt-4 bg-white"
+  style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+  <h2 class="text-center" style="color: #1E293B; font-weight: bold; margin-bottom: 1.5rem;">
+    <i class="pi pi-envelope mr-2"></i>Contáctanos
+  </h2>
+  <form class="p-fluid">
+    <!-- Campo Nombre -->
+    <div class="field mb-4">
+      <label for="name" class="block font-bold text-bluegray-800 mb-2">
+        <i class="pi pi-user mr-2"></i>Nombre
+      </label>
+      <input 
+        id="name" 
+        type="text" 
+        pInputText 
+        class="w-full border-round-lg p-2 border-1 surface-border" 
+        placeholder="Ingresa tu nombre" 
+      />
+    </div>
+    
+    <!-- Campo Correo Electrónico -->
+    <div class="field mb-4">
+      <label for="email" class="block font-bold text-bluegray-800 mb-2">
+        <i class="pi pi-envelope mr-2"></i>Correo Electrónico
+      </label>
+      <input 
+        id="email" 
+        type="email" 
+        pInputText 
+        class="w-full border-round-lg p-2 border-1 surface-border" 
+        placeholder="Ingresa tu correo electrónico" 
+      />
+    </div>
+    
+    <!-- Campo Mensaje -->
+    <div class="field mb-4">
+      <label for="message" class="block font-bold text-bluegray-800 mb-2">
+        <i class="pi pi-comment mr-2"></i>Mensaje
+      </label>
+      <textarea 
+        id="message" 
+        rows="4" 
+        pInputTextarea 
+        class="w-full border-round-lg p-2 border-1 surface-border" 
+        placeholder="Escribe tu mensaje"
+      ></textarea>
+    </div>
+    
+    <!-- Botones -->
+    <div class="field">
+      <div class="p-d-flex p-jc-between">
+        <p-button 
+          label="Enviar" 
+          icon="pi pi-send" 
+          class="p-button-rounded custom-button-class"
+        ></p-button>
+        <p-button 
+          label="Limpiar" 
+          icon="pi pi-times" 
+          class="p-button-rounded custom-button-class"
+          type="reset"
+        ></p-button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<p-footer class="footer">
+  <div class="footer-container">
+    <div class="grid p-3">
+      <div class="col-12 md:col-6">
+        <p class="text-white">
+          <i class="pi pi-copyright mr-2"></i>© 2024 Mi Empresa. Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="col-12 md:col-6 text-right">
+        <a href="#" class="text-white"><i class="pi pi-file mr-1"></i>Términos y condiciones</a> | 
+        <a href="#" class="text-white"><i class="pi pi-lock mr-1"></i>Política de privacidad</a>
+      </div>
+    </div>
+  </div>
+</p-footer>
